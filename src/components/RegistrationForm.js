@@ -51,6 +51,10 @@ class RegistrationForm extends React.Component {
             />
           </div>
         </div>
+        <div className="buttons">
+          <button id="cancelButton">Cancel</button>
+          <button id="registerButton">Register</button>
+        </div>
       </div>
     );
   }

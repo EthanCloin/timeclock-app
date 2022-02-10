@@ -1,49 +1,83 @@
 * {
   box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .registrationFormContainer {
   width: 600px;
   height: 600px;
-  background-color: #8047b8;
+  background-color: hsl(270, 44%, 50%);
   opacity: 75%;
   margin: auto;
   border-radius: 35px;
+  box-shadow: 10px 10px 10px black;
 }
 
 .registrationFormContainer h1 {
-  color: white;
-  padding-top: 40px;
+  color: hsl(0, 0%, 0%);
+  padding-top: 2rem;
   font-size: 32px;
+  font-weight: bold;
   text-align: center;
+  text-decoration: black dashed underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 1rem;
 }
 
 .registrationInputFields {
   position: relative;
   top: 20px;
   text-align: center;
-  margin-top: 40px;
 }
 
-/* .inputFieldWrapper {
-  display: flex;
-  float: inline-start;
-} */
+.inputFieldWrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
 
 .registrationInputFields input {
-  background: #c4c4c4;
+  background: hsl(0, 0%, 77%);
   width: 50%;
   padding: 5px;
   top: 0px;
   margin-bottom: 10px;
   border-radius: 10px;
+  display: block;
+  margin: auto;
 }
 
 .registrationInputFields label {
-  color: #c4c4c4;
-  margin-bottom: 0px;
+  color: hsl(0, 0%, 0%);
   padding: 10px;
-  text-align: left;
   font-size: 24px;
   display: block;
+  margin: auto;
+}
+
+.buttons {
+  display: flexbox;
+}
+.buttons button {
+  width: 8rem;
+  height: 3rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  font-size: large;
+  color: hsl(0, 0%, 0%);
+}
+
+.buttons #registerButton {
+  background-color: hsl(90, 44%, 50%, 1);
+  margin-left: 8rem;
+}
+.buttons #registerButton:hover {
+  background-color: hsl(90, 51%, 60%);
+}
+
+.buttons #cancelButton {
+  background-color: hsl(0, 44%, 50%, 1);
+  margin-right: 8rem;
+}
+.buttons #cancelButton:hover {
+  background-color: hsl(0, 51%, 57%);
 }
